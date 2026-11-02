@@ -1,0 +1,429 @@
+<!doctype html>
+<!--
+  Cats in Care, website concept "Chalk and whiskers".
+  Daylight photographs with a chalk layer drawn over them.
+  Static site: open index.html directly or serve the folder. No build step.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cats in Care · Rescue and homing for Wiltshire’s cats</title>
+<meta name="description" content="Cats in Care is a registered charity in Westbury, Wiltshire, for the rescue and homing of unwanted and abandoned cats and kittens. Charity number 285745.">
+<meta name="theme-color" content="#F7F2E6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cats in Care">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Cats in Care · Rescue and homing for Wiltshire’s cats">
+<meta property="og:description" content="Cats in Care is a registered charity in Westbury, Wiltshire, for the rescue and homing of unwanted and abandoned cats and kittens. Charity number 285745.">
+<meta property="og:image" content="https://catsincarewestbury.com/assets/og-hero-v2.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Cats in Care: a white chalk cat drawn onto a photograph of green Wiltshire chalk downland.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cats in Care · Rescue and homing for Wiltshire’s cats">
+<meta name="twitter:description" content="Cats in Care is a registered charity in Westbury, Wiltshire, for the rescue and homing of unwanted and abandoned cats and kittens. Charity number 285745.">
+<meta name="twitter:image" content="https://catsincarewestbury.com/assets/og-hero-v2.jpg?v=2">
+<link rel="icon" href="assets/brand/cic-icon-128.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Albert+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;family=Gaegu:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/photo/hero-down-1800.jpg" imagesrcset="assets/photo/hero-down-1200.jpg 1200w, assets/photo/hero-down-1800.jpg 1800w, assets/photo/hero-down-2400.jpg 2400w" imagesizes="100vw">
+<link rel="stylesheet" href="assets/style.css?v=8">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "Cats in Care", "description": "A registered charity in Westbury, Wiltshire, for the rescue and homing of unwanted and abandoned cats and kittens.", "address": {"@type": "PostalAddress", "streetAddress": "24 Redland Lane", "addressLocality": "Westbury", "addressRegion": "Wiltshire", "postalCode": "BA13 3QA", "addressCountry": "GB"}, "telephone": "+44 7449 370133", "foundingDate": "1982-11-10", "areaServed": "Wiltshire", "identifier": {"@type": "PropertyValue", "propertyID": "Charity Commission for England and Wales registered charity number", "value": "285745"}, "sameAs": ["https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/285745"]}</script>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="chalk" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="1" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="chalk-soft" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- chalk on a photograph: a rough edge plus grain knocked out of the stroke -->
+    <filter id="chalk-photo" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="1.7" numOctaves="1" seed="2" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.55" result="m"/>
+      <feComposite in="d" in2="m" operator="in"/>
+    </filter>
+    <clipPath id="roundel"><circle cx="100" cy="100" r="94"/></clipPath>
+  </defs>
+  <symbol id="mark" viewBox="0 0 200 200">
+    <g clip-path="url(#roundel)">
+      <rect width="200" height="200" fill="#F4EFDF"/>
+      <circle cx="152" cy="52" r="15" fill="#EFD9A0"/>
+      <path d="M-10 84 C 50 66, 130 58, 210 70 L210 210 L-10 210Z" fill="#5F8C50"/>
+      <path d="M-10 168 C 60 158, 140 162, 210 150 L210 210 L-10 210Z" fill="#2E5534"/>
+      <g transform="translate(24 76) scale(0.56)">
+        <path d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z" fill="#F7F4EA"/>
+        <path d="M42 112C8 106 4 64 34 56" fill="none" stroke="#F7F4EA" stroke-width="13" stroke-linecap="round"/>
+        <path d="M206 128C210 112 208 100 200 92M150 132C160 112 150 92 128 86M208 46q5 4 10 0M228 45q5 4 10 0" fill="none" stroke="#5F8C50" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    </g>
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#17301F" stroke-width="7"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 40 20"><path d="M2 11C12 9 24 10 36 10M27 3l9 7-9 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" data-bar>
+  <a class="brand" href="index.html" aria-label="Cats in Care, home">
+    <img class="brand-mark" src="assets/brand/cic-emblem-120.webp" alt="" width="79" height="42">
+    <span class="brand-word">Cats in Care</span>
+  </a>
+  <nav class="nav" id="site-nav" aria-label="Main" data-nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="help.html">Help us</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <span class="nav-extra">
+      <a class="btn btn-ink" href="help.html#donate">Donate <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      <a class="btn-text" href="tel:+447449370133">Call 07449 370133</a>
+    </span>
+  </nav>
+  <a class="bar-donate" href="help.html#donate">Donate</a>
+  <a class="bar-call" href="tel:+447449370133" aria-label="Call 07449 370133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>07449 370133</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu-lines" aria-hidden="true"><i></i><i></i></span><span class="menu-word">Menu</span></button>
+</header>
+
+<main id="main">
+
+<!-- ===================================================== HERO: a chalk cat drawn onto the down (three depths: photo, chalk, kitten print) -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-photo">
+    <div class="hero-pan" data-speed="0.16">
+      <img class="hero-img" src="assets/photo/hero-down-1800.jpg" srcset="assets/photo/hero-down-1200.jpg 1200w, assets/photo/hero-down-1800.jpg 1800w, assets/photo/hero-down-2400.jpg 2400w" sizes="100vw" width="2400" height="1800" data-ai="assets/ai/hero-bg.jpg" data-ai-alt="Aerial photograph of the Westbury White Horse on the green chalk escarpment of Bratton Down in morning light, with fields running to the horizon. A white chalk cat has been drawn onto the open slope." alt="Aerial photograph of green chalk downland on a bright autumn day: a broad grassy hillside between hedges and copses, with fields running to the horizon. A white chalk cat has been drawn onto the slope." fetchpriority="high">
+    </div>
+    <div class="hero-pan hero-pan-chalk" data-speed="0.07" aria-hidden="true">
+      <svg class="hero-chalk" viewBox="0 0 2400 1800" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <g class="hill-cat" transform="translate(1060 690) rotate(-6) scale(2.75)" filter="url(#chalk-photo)">
+          <path class="hc-fill" d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z" fill="#FBFAF4" fill-opacity=".9"/>
+          <path class="hc-line" pathLength="1" d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z" fill="none" stroke="#FBFAF4" stroke-width="4.5" stroke-linejoin="round"/>
+          <g class="hc-tail"><path class="hc-line" pathLength="1" d="M42 112C8 106 4 64 34 56" fill="none" stroke="#FBFAF4" stroke-width="10" stroke-linecap="round"/></g>
+          <path class="hc-cut" pathLength="1" d="M206 128C210 112 208 100 200 92M150 132C160 112 150 92 128 86M208 46q5 4 10 0M228 45q5 4 10 0" fill="none" stroke="#7E8F55" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <g class="hero-note" fill="none" stroke="#FBFAF4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-photo)">
+          <path class="hn-line" pathLength="1" d="M1000 470C1040 600 1180 740 1360 826M1310 834l52-6-18-48"/>
+          <path class="hn-line" pathLength="1" d="M1772 752l92-24M1774 778h98M1772 804l90 24"/>
+        </g>
+        <text class="hn-text" x="790" y="440" fill="#FBFAF4" filter="url(#chalk-photo)">a chalk cat, after the White Horse</text>
+      </svg>
+    </div>
+    <p class="scroll-cue" aria-hidden="true">scroll, and watch the chalk</p>
+  </div>
+
+  <figure class="hero-print" data-speed="-0.12" data-var aria-hidden="true">
+    <img src="assets/photo/kitten-window-640.jpg" width="640" height="800" alt="" loading="lazy">
+    <svg class="hero-print-note" viewBox="0 0 220 120" focusable="false"><path d="M200 108C170 70 120 40 40 34M56 18L36 34l22 14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)"/></svg>
+    <span class="hero-print-cap">…to a warm window</span>
+  </figure>
+
+  <div class="hero-card">
+    <p class="eyebrow">Westbury, Wiltshire <span aria-hidden="true">·</span> Registered charity 285745</p>
+    <h1 id="hero-title">Cats in Care</h1>
+    <p class="promise">We rescue unwanted and abandoned cats and kittens across Wiltshire, and find them homes.</p>
+    <div class="cta">
+      <a class="btn btn-ink" href="adopt.html">Adopt a cat <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      <a class="btn btn-line" href="help.html#donate">Donate</a>
+    </div>
+    <p class="hero-more"><a class="btn-text" href="help.html#volunteer">Volunteer</a><a class="btn-text" href="contact.html">Contact us</a><a class="btn-text" href="tel:+447449370133">07449 370133</a></p>
+  </div>
+</section>
+
+<!-- ===================================================== WHO WE ARE: on the register -->
+<section class="who" id="who" aria-labelledby="who-title">
+  <div class="wrap who-grid">
+    <div class="who-copy">
+      <p class="label"><span>01</span> Who we are</p>
+      <h2 id="who-title">A Westbury charity for Wiltshire’s cats.</h2>
+      <p class="lede">Cats in Care is a registered charity on Redland Lane in Westbury, below the White Horse. We work across Wiltshire.</p>
+      <p>What we do fits on one line of the register: the rescue and homing of unwanted and abandoned cats and kittens. Everything else is how we go about it.</p>
+      <p>We were registered with the Charity Commission on 10 November 1982.</p>
+      <p><a class="btn-text" href="about.html">Our story, aims and accounts</a></p>
+    </div>
+
+    <div class="who-side">
+      <figure class="slate" data-reveal aria-labelledby="slate-cap">
+        <svg class="slate-cat" viewBox="0 0 200 270" aria-hidden="true" data-watch>
+          <g fill="none" stroke="#F4F1E4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+            <path d="M150 258L147 168C149 140 150 116 138 100C156 90 160 66 148 50L147 14L128 34C120 32 112 32 106 35L90 16L91 52C80 72 82 92 74 108C52 138 44 170 44 204C44 238 62 258 98 258L150 258"/>
+            <g class="slate-tail"><path d="M54 254C18 262 4 238 26 224"/></g>
+            <path d="M98 258C114 230 104 202 82 190"/>
+          </g>
+          <g fill="#F4F1E4"><circle class="eye" cx="114" cy="66" r="4.2"/><circle class="eye" cx="137" cy="65" r="4.2"/></g>
+        </svg>
+        <div class="slate-board">
+          <p class="slate-head" id="slate-cap">On the register</p>
+          <dl class="slate-list">
+            <div><dt>Charity no.</dt><dd>285745</dd></div>
+            <div><dt>Registered</dt><dd>10 November 1982</dd></div>
+            <div><dt>Based in</dt><dd>Westbury, Wiltshire</dd></div>
+            <div><dt>Working across</dt><dd>Wiltshire</dd></div>
+            <div class="wide"><dt>For</dt><dd>the rescue and homing of unwanted and abandoned cats and kittens</dd></div>
+          </dl>
+          <p class="slate-foot">Charity Commission for England and Wales</p>
+        </div>
+      </figure>
+      <figure class="print print-sill">
+        <img src="assets/photo/cats-sill-1400.jpg" srcset="assets/photo/cats-sill-800.jpg 800w, assets/photo/cats-sill-1400.jpg 1400w" sizes="(max-width: 900px) 92vw, 640px" width="1400" height="933" alt="Two cats, one tabby and one ginger, lying on a sunny windowsill and looking out through a bright window." loading="lazy">
+        <svg class="print-chalk" viewBox="0 0 300 200" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="#E0761B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+            <path d="M74 70c-5-8-18-3-12 7l12 12 12-12c6-10-7-15-12-7z"/>
+            <path d="M226 66c-5-8-18-3-12 7l12 12 12-12c6-10-7-15-12-7z"/>
+            <path d="M150 30v-14M128 36l-8-10M172 36l8-10"/>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== THE LINE HOME: scroll-drawn chalk over two photographs -->
+<section class="line" id="line" aria-labelledby="line-title" data-story>
+  <div class="line-stick">
+    <div class="line-bg" aria-hidden="true">
+      <img class="lp lp-hill" data-pspeed="-70" src="assets/photo/line-hill-1600.jpg" srcset="assets/photo/line-hill-1000.jpg 1000w, assets/photo/line-hill-1600.jpg 1600w" sizes="100vw" width="1600" height="1126" data-ai="assets/ai/line-hill.jpg" alt="" loading="lazy">
+      <img class="lp lp-hearth" data-hearth data-pspeed="-70" src="assets/photo/line-hearth-1600.jpg" srcset="assets/photo/line-hearth-1000.jpg 1000w, assets/photo/line-hearth-1600.jpg 1600w" sizes="100vw" width="1600" height="1068" data-ai="assets/ai/line-hearth.jpg" alt="" loading="lazy">
+      <div class="line-scrim"></div>
+    </div>
+
+    <div class="wrap line-inner">
+      <header class="line-head" data-pspeed="-36">
+        <p class="label label-chalk"><span>02</span> The line home</p>
+        <h2 id="line-title">One chalk line, from the hillside to a hearth.</h2>
+      </header>
+
+      <svg class="drawing" viewBox="40 120 1130 370" role="img" aria-labelledby="drawing-desc">
+        <desc id="drawing-desc">Drawn in chalk over a photograph of green downland that gives way to a photograph of a cat asleep by a warm stove: a single chalk line draws a cat sitting alone, then a winding lane with paw prints, then a cottage, and finally the cat lying safe in the cottage window.</desc>
+        <g fill="none" stroke="#F4F1E4" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+          <g transform="translate(70 238) scale(0.86)">
+            <path data-seg="0.02 0.2" pathLength="1" d="M150 258L147 168C149 140 150 116 138 100C156 90 160 66 148 50L147 14L128 34C120 32 112 32 106 35L90 16L91 52C80 72 82 92 74 108C52 138 44 170 44 204C44 238 62 258 98 258L150 258"/>
+            <path data-seg="0.18 0.23" pathLength="1" d="M54 254C18 262 4 238 26 224"/>
+            <path data-seg="0.2 0.24" pathLength="1" d="M98 258C114 230 104 202 82 190"/>
+            <path data-seg="0.23 0.26" pathLength="1" d="M108 66q6 5 12 0M130 65q6 5 12 0"/>
+          </g>
+          <path id="lane" data-seg="0.29 0.53" pathLength="1" d="M200 460C260 462 300 452 360 440S470 396 540 404 640 470 720 466 820 430 880 452 930 462 960 462"/>
+          <g data-paws></g>
+          <path data-seg="0.56 0.66" pathLength="1" d="M890 462V318H1110V462H890"/>
+          <path data-seg="0.62 0.72" pathLength="1" d="M868 326L1000 222L1132 326"/>
+          <path data-seg="0.68 0.74" pathLength="1" d="M1058 262V232H1084V282"/>
+          <path data-seg="0.7 0.77" pathLength="1" d="M920 462V392C920 370 960 370 960 392V462"/>
+          <rect class="glow" data-glow x="1008" y="348" width="82" height="70" rx="2" fill="#E7A24F" stroke="none" opacity="0"/>
+          <path data-seg="0.73 0.8" pathLength="1" d="M1006 346H1092V420H1006ZM1006 420H1100"/>
+          <g transform="translate(1012 381) scale(0.3)">
+            <path data-seg="0.82 0.92" pathLength="1" stroke-width="13" d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132L44 132"/>
+            <path data-seg="0.9 0.94" pathLength="1" stroke-width="13" d="M42 112C8 106 4 64 34 56"/>
+          </g>
+          <path data-seg="0.9 0.99" pathLength="1" d="M1072 222C1060 204 1088 194 1076 176S1088 150 1080 134"/>
+        </g>
+      </svg>
+
+      <ol class="beats" aria-label="The story in four lines">
+        <li class="beat is-on"><strong>Some cats are unwanted.</strong><span>A cat on its own, with nowhere to be.</span></li>
+        <li class="beat"><strong>Some are abandoned.</strong><span>Left to fend for themselves.</span></li>
+        <li class="beat"><strong>We rescue them.</strong><span>Cats and kittens, taken into our care.</span></li>
+        <li class="beat"><strong>And we find them homes.</strong><span>That is the whole line, start to finish.</span></li>
+      </ol>
+      <div class="line-meter" aria-hidden="true"><i data-meter></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== HOW WE HELP: chalk on photographs -->
+<section class="help" id="help" aria-labelledby="help-title">
+  <div class="wrap">
+    <div class="help-head">
+      <p class="label"><span>03</span> What we do</p>
+      <h2 id="help-title">What we do, plainly.</h2>
+      <p class="lede help-lede">No grand programme. Cats who need us, people who help, and Wiltshire around us. Tap a card to watch the chalk go on again.</p>
+    </div>
+
+    <ul class="cards">
+      <li><button class="card" type="button" aria-label="Rescue: redraw the chalk on the photograph">
+        <span class="card-photo">
+          <img src="assets/photo/card-rescue-800.jpg" width="800" height="600" alt="" loading="lazy">
+          <svg class="card-art" viewBox="0 0 400 300" aria-hidden="true"><g fill="none" stroke="#FBFAF4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+            <path pathLength="1" d="M122 150C118 102 168 80 214 80C272 82 302 118 298 160C294 206 242 224 196 220C150 216 114 192 126 146"/>
+            <path pathLength="1" d="M338 66c-9-13-31-4-20 13l20 20 20-20c11-17-11-26-20-13z"/>
+            <path pathLength="1" d="M40 268C66 250 92 232 124 208"/>
+            <path pathLength="1" d="M106 204l20 2-4 20"/>
+          </g></svg>
+        </span>
+        <span class="card-copy"><span class="card-num">i</span>
+        <span class="card-title">Rescue</span>
+        <span class="card-text">We take in unwanted and abandoned cats and kittens.</span></span>
+      </button></li>
+      <li><button class="card" type="button" aria-label="Homing: redraw the chalk on the photograph">
+        <span class="card-photo">
+          <img src="assets/photo/card-homing-800.jpg" width="800" height="600" alt="" loading="lazy">
+          <svg class="card-art" viewBox="0 0 400 300" aria-hidden="true"><g fill="none" stroke="#FBFAF4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+            <path pathLength="1" d="M112 262V156L200 92L288 156V262"/>
+            <path pathLength="1" d="M248 122V94H268V138"/>
+            <path pathLength="1" d="M258 84c-9-10 9-16 0-26s7-16 0-24"/>
+            <path pathLength="1" d="M326 214c-7-10-25-3-16 10l16 16 16-16c9-13-9-20-16-10z"/>
+          </g></svg>
+        </span>
+        <span class="card-copy"><span class="card-num">ii</span>
+        <span class="card-title">Homing</span>
+        <span class="card-text">We find them new homes, and new people.</span></span>
+      </button></li>
+      <li><button class="card" type="button" aria-label="Across Wiltshire: redraw the chalk on the photograph">
+        <span class="card-photo">
+          <img src="assets/photo/card-horse-800.jpg" width="800" height="600" data-ai="assets/ai/card-horse.jpg" alt="" loading="lazy">
+          <svg class="card-art" viewBox="0 0 400 300" aria-hidden="true"><g fill="none" stroke="#FBFAF4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+            <path pathLength="1" d="M112 50C108 24 150 18 184 22C214 26 218 58 190 70C160 80 114 74 112 48"/>
+            <path pathLength="1" d="M66 196C70 150 90 112 122 82"/>
+            <path pathLength="1" d="M104 84l20-4 2 20"/>
+          </g><text class="card-label" x="22" y="236">Westbury White Horse</text></svg>
+        </span>
+        <span class="card-copy"><span class="card-num">iii</span>
+        <span class="card-title">Across Wiltshire</span>
+        <span class="card-text">Our area is the county, from our base in Westbury.</span></span>
+      </button></li>
+      <li><button class="card" type="button" aria-label="Sales and fundraisers: redraw the chalk on the photograph">
+        <span class="card-photo">
+          <img src="assets/photo/card-sales-800.jpg" width="800" height="600" alt="" loading="lazy">
+          <svg class="card-art" viewBox="0 0 400 300" aria-hidden="true"><g fill="none" stroke="#FBFAF4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+            <path pathLength="1" d="M36 276H160M98 276V256M50 256H146"/>
+            <path pathLength="1" d="M60 256V218H136V256M60 218C72 200 124 200 136 218"/>
+            <circle pathLength="1" cx="98" cy="196" r="7"/>
+            <path pathLength="1" d="M236 262c-8-12-30-4-20 12l20 20 20-20c10-16-12-24-20-12z"/>
+          </g></svg>
+        </span>
+        <span class="card-copy"><span class="card-num">iv</span>
+        <span class="card-title">Sales and fundraisers</span>
+        <span class="card-text">We hold local sales and fundraisers to raise money for the cats.</span></span>
+      </button></li>
+    </ul>
+    <p class="card-links"><a class="btn-text" href="adopt.html">Adopting a cat</a><a class="btn-text" href="help.html#sales">Sales and fundraisers</a><a class="btn-text" href="about.html#area">Where we work</a></p>
+  </div>
+</section>
+
+<!-- ===================================================== WAYS TO HELP: pick up the chalk -->
+<section class="ways" id="ways" aria-labelledby="ways-title">
+  <div class="wrap ways-grid">
+    <div class="ways-copy">
+      <p class="label"><span>04</span> Ways to help</p>
+      <h2 id="ways-title">Pick up the chalk.</h2>
+      <p class="lede">There is no online form here, just people. Give us a ring or write to us, and we will talk it through.</p>
+
+      <ol class="ways-list">
+        <li><h3><a href="adopt.html">Adopt a cat</a></h3><p>Give a rescued cat or kitten a home. Call us to ask about the cats in our care.</p></li>
+        <li><h3><a href="help.html#volunteer">Volunteer or foster</a></h3><p>Ask how you can help, whether that is your time, a spare room or a pair of hands at a sale.</p></li>
+        <li><h3><a href="help.html#donate">Donate</a></h3><p>Gifts support our rescue and homing work. To give, please call or write to us.</p></li>
+        <li><h3><a href="help.html#sales">Come to a sale</a></h3><p>We hold sales and fundraisers locally. Ask us when the next one is.</p></li>
+      </ol>
+
+      <div class="contact">
+        <a class="contact-row contact-call" href="tel:+447449370133"><span class="k">Call</span><span class="v">07449 370133</span><svg class="contact-arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+        <div class="contact-row"><span class="k">Write</span><address class="v">24 Redland Lane, Westbury,<br>Wiltshire BA13 3QA</address></div>
+      </div>
+    </div>
+
+    <figure class="board">
+      <div class="board-frame">
+        <img class="board-photo" src="assets/photo/board-hill-1200.jpg" srcset="assets/photo/board-hill-700.jpg 700w, assets/photo/board-hill-1200.jpg 1200w" sizes="(max-width: 900px) 92vw, 560px" width="1200" height="902" alt="" loading="lazy">
+        <canvas class="board-canvas" data-board aria-label="A chalk drawing board laid over a photograph of a grassy hillside. Draw with your mouse, finger or pen." role="img"></canvas>
+        <p class="board-hint" data-hint>draw us a cat</p>
+      </div>
+      <figcaption class="board-bar">
+        <span>While you are here, leave your mark on the hill.</span>
+        <span class="board-btns">
+          <button type="button" class="chip" data-auto>Draw one for me</button>
+          <button type="button" class="chip" data-clear>Rub it out</button>
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================================================== FOUND A CAT: a short note pinned up -->
+<section class="found-strip" aria-labelledby="found-strip-title">
+  <div class="wrap">
+    <div class="found-note">
+      <h2 id="found-strip-title">Found a cat that is hurt or in danger?</h2>
+      <p>We are a small local charity, not an emergency service. The RSPCA in England and Wales asks you to ring <a href="tel:03001238960">0300 123 8960</a>.</p>
+      <a class="btn-text" href="contact.html#found">What to do if you find a cat</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== OFFICIAL PARTNERS: a hill figure cut into the chalk -->
+<section class="partners" aria-labelledby="partners-title">
+  <div class="down" aria-hidden="true">
+    <img class="down-photo" data-speed="0.14" src="assets/photo/partners-down-1600.jpg" srcset="assets/photo/partners-down-1000.jpg 1000w, assets/photo/partners-down-1600.jpg 1600w" sizes="100vw" width="1600" height="909" data-ai="assets/ai/partners-down.jpg" alt="" loading="lazy">
+  </div>
+
+  <div class="wrap partners-inner">
+    <h2 id="partners-title" class="label"><span>05</span> Official partners</h2>
+    <div class="partner-more partner-slip"><p class="partner-why">Origin Labs brings Wiltshire&rsquo;s cats to new supporters across the crypto community. <a href="help.html#give-crypto">Give in crypto</a></p><p>Registered with the <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener" target="_blank">Charity Commission for England and Wales</a>, no. 285745</p></div>
+    <div class="cut-layer" data-speed="-0.06">
+    <a class="cut" data-cut href="https://originlabs.art" rel="noopener" target="_blank">
+      <svg class="cut-art" viewBox="0 0 480 270" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <g class="cut-turf">
+          <path d="M24 242C14 180 16 96 30 34C120 22 330 18 452 30C462 90 466 180 458 238C340 252 140 254 24 242Z" transform="translate(3 9)" fill="#3A6333"/>
+          <path d="M24 242C14 180 16 96 30 34C120 22 330 18 452 30C462 90 466 180 458 238C340 252 140 254 24 242Z" fill="#44703B" stroke="#44703B" stroke-width="10" stroke-linejoin="round"/>
+        </g>
+        <g class="cut-face">
+          <path class="cut-chalk" d="M24 242C14 180 16 96 30 34C120 22 330 18 452 30C462 90 466 180 458 238C340 252 140 254 24 242Z" filter="url(#chalk)"/>
+          <path d="M60 70C150 62 300 60 420 68M64 206C170 214 320 214 418 204" fill="none" stroke="#ECE7D4" stroke-width="7" stroke-linecap="round"/>
+          <path d="M42 226C34 172 36 102 46 50C130 40 322 36 436 46C444 100 448 172 442 222C330 234 148 236 42 226Z" fill="none" stroke="#DCD6BF" stroke-width="2.5" filter="url(#chalk-soft)"/>
+          <g fill="#A3AA9C"><circle cx="30" cy="140" r="2.4"/><circle cx="58" cy="236" r="2"/><circle cx="452" cy="120" r="2.2"/><circle cx="446" cy="214" r="2.8"/><circle cx="260" cy="244" r="1.8"/><circle cx="96" cy="30" r="1.6"/></g>
+          <g fill="#5F8C50"><path d="M118 25l4 9 3-10 3 9 4-11 2 11Z"/><path d="M316 21l3 8 3-9 3 8 4-10 2 10Z"/><path d="M196 252l3-8 3 9 3-8 3 7Z"/></g>
+        </g>
+        <g class="cut-cat" transform="translate(536 150) scale(.62)" filter="url(#chalk)">
+          <path d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z M42 112C8 106 4 64 34 56" fill="none" stroke="#F4F1E4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <path class="cut-line" pathLength="1" d="M557 185C540 196 520 226 496 236S470 242 458 238C466 180 462 90 452 30C330 18 120 22 30 34C16 96 14 180 24 242C140 254 340 252 458 238" filter="url(#chalk)"/>
+      </svg>
+      <span class="cut-scuffs" aria-hidden="true"></span>
+      <img src="assets/lockup-light.png" alt="Origin Labs" width="1800" height="512" loading="lazy">
+      <span class="partner-note">Crypto donation partner</span>
+      <span class="cut-dust" aria-hidden="true"></span>
+    </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" aria-labelledby="foot-title">
+  <div class="wrap foot-inner">
+    <figure class="print foot-print" aria-hidden="true">
+      <img src="assets/photo/foot-kitten-900.jpg" width="900" height="675" alt="" loading="lazy">
+      <svg class="print-chalk" viewBox="0 0 400 300" focusable="false">
+        <g fill="none" stroke="#E0761B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+          <path d="M300 40h26l-26 28h26M340 78h18l-18 20h18M366 108h12l-12 14h12"/>
+        </g>
+      </svg>
+    </figure>
+    <div class="foot-brand">
+      <img class="foot-mark" src="assets/brand/cic-emblem-200.webp" alt="" width="150" height="80" loading="lazy">
+      <p id="foot-title" class="foot-name">Cats in Care</p>
+      <p class="foot-line">Rescue and homing for Wiltshire’s cats.</p>
+      <p class="foot-actions"><a class="foot-btn" href="help.html#donate">Donate</a><a class="foot-btn" href="adopt.html">Adopt</a><a class="foot-btn" href="help.html#volunteer">Volunteer</a></p>
+    </div>
+    <div class="foot-legal">
+      <p><strong>Cats in Care</strong> is a registered charity in England and Wales, number 285745, regulated by the <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener">Charity Commission</a>.</p>
+      <p><span class="foot-k">Write</span> 24 Redland Lane, Westbury, Wiltshire BA13 3QA<br><span class="foot-k">Call</span> <a href="tel:+447449370133">07449 370133</a></p>
+      <p class="foot-small">Not an emergency service. Found a cat that is hurt or in danger? See <a href="contact.html#found">what to do</a>.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="index.html" aria-current="page">Home</a><a href="adopt.html">Adopt</a><a href="help.html">Help us</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="policies.html">Policies</a><a class="foot-top" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/main.js?v=8"></script>
+</body>
+</html>

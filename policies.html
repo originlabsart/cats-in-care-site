@@ -1,0 +1,201 @@
+<!doctype html>
+<!--
+  Cats in Care, website concept "Chalk and whiskers".
+  Daylight photographs with a chalk layer drawn over them.
+  Static site: open index.html directly or serve the folder. No build step.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Policies · Cats in Care, Westbury</title>
+<meta name="description" content="Privacy, accessibility, complaints and charity details for the Cats in Care website.">
+<meta name="theme-color" content="#F7F2E6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cats in Care">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Policies · Cats in Care, Westbury">
+<meta property="og:description" content="Privacy, accessibility, complaints and charity details for the Cats in Care website.">
+<meta property="og:image" content="https://catsincarewestbury.com/assets/og-hero-v2.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Cats in Care: a white chalk cat drawn onto a photograph of green Wiltshire chalk downland.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Policies · Cats in Care, Westbury">
+<meta name="twitter:description" content="Privacy, accessibility, complaints and charity details for the Cats in Care website.">
+<meta name="twitter:image" content="https://catsincarewestbury.com/assets/og-hero-v2.jpg?v=2">
+<link rel="icon" href="assets/brand/cic-icon-128.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Albert+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;family=Gaegu:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=8">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "Cats in Care", "description": "A registered charity in Westbury, Wiltshire, for the rescue and homing of unwanted and abandoned cats and kittens.", "address": {"@type": "PostalAddress", "streetAddress": "24 Redland Lane", "addressLocality": "Westbury", "addressRegion": "Wiltshire", "postalCode": "BA13 3QA", "addressCountry": "GB"}, "telephone": "+44 7449 370133", "foundingDate": "1982-11-10", "areaServed": "Wiltshire", "identifier": {"@type": "PropertyValue", "propertyID": "Charity Commission for England and Wales registered charity number", "value": "285745"}, "sameAs": ["https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/285745"]}</script>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="chalk" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="1" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="chalk-soft" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- chalk on a photograph: a rough edge plus grain knocked out of the stroke -->
+    <filter id="chalk-photo" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="1.7" numOctaves="1" seed="2" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.55" result="m"/>
+      <feComposite in="d" in2="m" operator="in"/>
+    </filter>
+    <clipPath id="roundel"><circle cx="100" cy="100" r="94"/></clipPath>
+  </defs>
+  <symbol id="mark" viewBox="0 0 200 200">
+    <g clip-path="url(#roundel)">
+      <rect width="200" height="200" fill="#F4EFDF"/>
+      <circle cx="152" cy="52" r="15" fill="#EFD9A0"/>
+      <path d="M-10 84 C 50 66, 130 58, 210 70 L210 210 L-10 210Z" fill="#5F8C50"/>
+      <path d="M-10 168 C 60 158, 140 162, 210 150 L210 210 L-10 210Z" fill="#2E5534"/>
+      <g transform="translate(24 76) scale(0.56)">
+        <path d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z" fill="#F7F4EA"/>
+        <path d="M42 112C8 106 4 64 34 56" fill="none" stroke="#F7F4EA" stroke-width="13" stroke-linecap="round"/>
+        <path d="M206 128C210 112 208 100 200 92M150 132C160 112 150 92 128 86M208 46q5 4 10 0M228 45q5 4 10 0" fill="none" stroke="#5F8C50" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    </g>
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#17301F" stroke-width="7"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 40 20"><path d="M2 11C12 9 24 10 36 10M27 3l9 7-9 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" data-bar>
+  <a class="brand" href="index.html" aria-label="Cats in Care, home">
+    <img class="brand-mark" src="assets/brand/cic-emblem-120.webp" alt="" width="79" height="42">
+    <span class="brand-word">Cats in Care</span>
+  </a>
+  <nav class="nav" id="site-nav" aria-label="Main" data-nav>
+    <a href="index.html">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="help.html">Help us</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <span class="nav-extra">
+      <a class="btn btn-ink" href="help.html#donate">Donate <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      <a class="btn-text" href="tel:+447449370133">Call 07449 370133</a>
+    </span>
+  </nav>
+  <a class="bar-donate" href="help.html#donate">Donate</a>
+  <a class="bar-call" href="tel:+447449370133" aria-label="Call 07449 370133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>07449 370133</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu-lines" aria-hidden="true"><i></i><i></i></span><span class="menu-word">Menu</span></button>
+</header>
+
+<main id="main">
+
+<!-- ===================================================== PAGE HEAD: a shorter layered strip -->
+<section class="pagehead pagehead-short ph-policies" data-top aria-labelledby="ph-title">
+  <div class="ph-photo">
+    <div class="ph-pan" data-speed="0.2">
+      <img class="ph-img" src="assets/photo/line-hill-1600.jpg" srcset="assets/photo/line-hill-1000.jpg 1000w, assets/photo/line-hill-1600.jpg 1600w" sizes="100vw" width="1600" height="1126" data-ai="assets/ai/line-hill.jpg" alt="" fetchpriority="high">
+    </div>
+    <div class="ph-pan ph-pan-chalk" data-speed="0.07" aria-hidden="true">
+      <svg class="ph-chalk" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <g transform="translate(120 -40)" fill="none" stroke="#FBFAF4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-photo)">
+          <path class="ph-draw" pathLength="1" d="M760 300l24 26 48-60M760 400l24 26 48-60M760 500l24 26 48-60"/>
+          <path class="ph-draw" pathLength="1" d="M870 300h170M870 400h130M870 500h150"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="ph-card">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Policies</span></nav>
+    <h1 id="ph-title">Policies</h1>
+    <p class="ph-lede">Privacy, accessibility, complaints and our charity details.</p>
+  </div>
+</section>
+
+<section class="sect" aria-label="Policies">
+  <div class="wrap policy-grid">
+    <nav class="policy-toc" aria-label="On this page">
+      <a href="#privacy">Privacy</a><a href="#accessibility">Accessibility</a><a href="#complaints">Complaints and concerns</a><a href="#details">Charity details</a>
+    </nav>
+    <div class="policy">
+      <section id="privacy" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Privacy</h2>
+        <p>This website does not collect personal data. It has no forms, no accounts, no analytics and no advertising, and it does not set cookies.</p>
+        <p>The site uses Google Fonts to display its typefaces. When a page loads, your browser requests the fonts from Google’s servers, which can see your IP address. You can read <a href="https://policies.google.com/privacy" rel="noopener">Google’s privacy policy</a>.</p>
+        <p>The links to Google Maps and Apple Maps on our contact page open those services, which have their own privacy policies. Nothing is sent to them unless you follow a link.</p>
+        <p>If you phone or write to us and would like to know how we look after what you tell us, or what information we hold about you, call us on <a href="tel:+447449370133">07449 370133</a> or write to us at the address below.</p>
+      </section>
+      <section id="accessibility" aria-labelledby="access-title">
+        <h2 id="access-title">Accessibility</h2>
+        <p>We want everyone to be able to use this site. It has been built to:</p>
+        <ul>
+          <li>work with a keyboard alone, with a visible focus outline and a “skip to content” link on every page;</li>
+          <li>respect your device’s reduced motion setting: the parallax, scroll drawing and chalk animations are switched off and the finished drawings are shown at once;</li>
+          <li>keep body text at a contrast of at least 4.5 to 1, with dark scrims under any text on photographs;</li>
+          <li>give every meaningful photograph a text description, and hide purely decorative images and drawings from screen readers;</li>
+          <li>reflow to narrow screens down to 320 pixels wide without sideways scrolling, and allow zooming.</li>
+        </ul>
+        <p>The chalk drawing board on the home page is a decorative extra; nothing on the site depends on it.</p>
+        <p>If you find something that does not work for you, please tell us by calling <a href="tel:+447449370133">07449 370133</a> or writing to us, and we will do our best to fix it or give you the information another way.</p>
+      </section>
+      <section id="complaints" aria-labelledby="complaints-title">
+        <h2 id="complaints-title">Complaints and concerns</h2>
+        <p>If you are unhappy with anything we have done, or have a concern about a cat or about the charity, please tell us first. Call <a href="tel:+447449370133">07449 370133</a> or write to Cats in Care, 24 Redland Lane, Westbury, Wiltshire BA13 3QA.</p>
+        <p>If you have raised a concern with us and it has not been resolved, you can report a concern about a charity to the regulator, the Charity Commission for England and Wales, at <a href="https://www.gov.uk/complain-about-charity" rel="noopener">gov.uk/complain-about-charity</a>.</p>
+        <p>If you are worried about an animal’s welfare right now, see <a href="contact.html#found">what to do if you find a cat</a>.</p>
+      </section>
+      <section id="details" aria-labelledby="details-title">
+        <h2 id="details-title">Charity details</h2>
+        <dl class="details-dl">
+          <div><dt>Name</dt><dd>Cats in Care</dd></div>
+          <div><dt>Registered charity number</dt><dd>285745</dd></div>
+          <div><dt>Regulator</dt><dd>Charity Commission for England and Wales</dd></div>
+          <div><dt>Registered</dt><dd>10 November 1982</dd></div>
+          <div><dt>Address</dt><dd>24 Redland Lane, Westbury, Wiltshire BA13 3QA</dd></div>
+          <div><dt>Telephone</dt><dd><a href="tel:+447449370133">07449 370133</a></dd></div>
+          <div><dt>Public record</dt><dd><a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener">Register of charities entry</a></dd></div>
+        </dl>
+      </section>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" aria-labelledby="foot-title">
+  <div class="wrap foot-inner">
+    <figure class="print foot-print" aria-hidden="true">
+      <img src="assets/photo/foot-kitten-900.jpg" width="900" height="675" alt="" loading="lazy">
+      <svg class="print-chalk" viewBox="0 0 400 300" focusable="false">
+        <g fill="none" stroke="#E0761B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+          <path d="M300 40h26l-26 28h26M340 78h18l-18 20h18M366 108h12l-12 14h12"/>
+        </g>
+      </svg>
+    </figure>
+    <div class="foot-brand">
+      <img class="foot-mark" src="assets/brand/cic-emblem-200.webp" alt="" width="150" height="80" loading="lazy">
+      <p id="foot-title" class="foot-name">Cats in Care</p>
+      <p class="foot-line">Rescue and homing for Wiltshire’s cats.</p>
+      <p class="foot-actions"><a class="foot-btn" href="help.html#donate">Donate</a><a class="foot-btn" href="adopt.html">Adopt</a><a class="foot-btn" href="help.html#volunteer">Volunteer</a></p>
+    </div>
+    <div class="foot-legal">
+      <p><strong>Cats in Care</strong> is a registered charity in England and Wales, number 285745, regulated by the <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener">Charity Commission</a>.</p>
+      <p><span class="foot-k">Write</span> 24 Redland Lane, Westbury, Wiltshire BA13 3QA<br><span class="foot-k">Call</span> <a href="tel:+447449370133">07449 370133</a></p>
+      <p class="foot-small">Not an emergency service. Found a cat that is hurt or in danger? See <a href="contact.html#found">what to do</a>.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="index.html">Home</a><a href="adopt.html">Adopt</a><a href="help.html">Help us</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="policies.html" aria-current="page">Policies</a><a class="foot-top" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/main.js?v=8"></script>
+</body>
+</html>

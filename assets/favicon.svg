@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><title>Cats in Care</title><defs><clipPath id="roundel"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+    <g clip-path="url(#roundel)">
+      <rect width="200" height="200" fill="#F4EFDF"/>
+      <circle cx="152" cy="52" r="15" fill="#EFD9A0"/>
+      <path d="M-10 84 C 50 66, 130 58, 210 70 L210 210 L-10 210Z" fill="#5F8C50"/>
+      <path d="M-10 168 C 60 158, 140 162, 210 150 L210 210 L-10 210Z" fill="#2E5534"/>
+      <g transform="translate(24 76) scale(0.56)">
+        <path d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z" fill="#F7F4EA"/>
+        <path d="M42 112C8 106 4 64 34 56" fill="none" stroke="#F7F4EA" stroke-width="13" stroke-linecap="round"/>
+        <path d="M206 128C210 112 208 100 200 92M150 132C160 112 150 92 128 86M208 46q5 4 10 0M228 45q5 4 10 0" fill="none" stroke="#5F8C50" stroke-width="8" stroke-linecap="round"/>
+      </g>
+    </g>
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#17301F" stroke-width="7"/>
+  </svg>

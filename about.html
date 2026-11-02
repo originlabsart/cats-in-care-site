@@ -1,0 +1,249 @@
+<!doctype html>
+<!--
+  Cats in Care, website concept "Chalk and whiskers".
+  Daylight photographs with a chalk layer drawn over them.
+  Static site: open index.html directly or serve the folder. No build step.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About us · Cats in Care, Westbury</title>
+<meta name="description" content="About Cats in Care: a Wiltshire cat rescue charity registered on 10 November 1982, charity number 285745. Our aims, area, governance and money.">
+<meta name="theme-color" content="#F7F2E6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cats in Care">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="About us · Cats in Care, Westbury">
+<meta property="og:description" content="About Cats in Care: a Wiltshire cat rescue charity registered on 10 November 1982, charity number 285745. Our aims, area, governance and money.">
+<meta property="og:image" content="https://catsincarewestbury.com/assets/og-hero-v2.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Cats in Care: a white chalk cat drawn onto a photograph of green Wiltshire chalk downland.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About us · Cats in Care, Westbury">
+<meta name="twitter:description" content="About Cats in Care: a Wiltshire cat rescue charity registered on 10 November 1982, charity number 285745. Our aims, area, governance and money.">
+<meta name="twitter:image" content="https://catsincarewestbury.com/assets/og-hero-v2.jpg?v=2">
+<link rel="icon" href="assets/brand/cic-icon-128.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Albert+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;family=Gaegu:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=8">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "Cats in Care", "description": "A registered charity in Westbury, Wiltshire, for the rescue and homing of unwanted and abandoned cats and kittens.", "address": {"@type": "PostalAddress", "streetAddress": "24 Redland Lane", "addressLocality": "Westbury", "addressRegion": "Wiltshire", "postalCode": "BA13 3QA", "addressCountry": "GB"}, "telephone": "+44 7449 370133", "foundingDate": "1982-11-10", "areaServed": "Wiltshire", "identifier": {"@type": "PropertyValue", "propertyID": "Charity Commission for England and Wales registered charity number", "value": "285745"}, "sameAs": ["https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/285745"]}</script>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="chalk" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="1" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="chalk-soft" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- chalk on a photograph: a rough edge plus grain knocked out of the stroke -->
+    <filter id="chalk-photo" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="1.7" numOctaves="1" seed="2" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.55" result="m"/>
+      <feComposite in="d" in2="m" operator="in"/>
+    </filter>
+    <clipPath id="roundel"><circle cx="100" cy="100" r="94"/></clipPath>
+  </defs>
+  <symbol id="mark" viewBox="0 0 200 200">
+    <g clip-path="url(#roundel)">
+      <rect width="200" height="200" fill="#F4EFDF"/>
+      <circle cx="152" cy="52" r="15" fill="#EFD9A0"/>
+      <path d="M-10 84 C 50 66, 130 58, 210 70 L210 210 L-10 210Z" fill="#5F8C50"/>
+      <path d="M-10 168 C 60 158, 140 162, 210 150 L210 210 L-10 210Z" fill="#2E5534"/>
+      <g transform="translate(24 76) scale(0.56)">
+        <path d="M44 132C22 128 20 88 58 78C100 68 150 72 180 70C186 58 190 44 196 36L194 8L212 24C218 22 224 22 230 24L246 10L246 38C254 50 252 66 238 74C236 90 238 108 246 122C256 124 266 126 266 132Z" fill="#F7F4EA"/>
+        <path d="M42 112C8 106 4 64 34 56" fill="none" stroke="#F7F4EA" stroke-width="13" stroke-linecap="round"/>
+        <path d="M206 128C210 112 208 100 200 92M150 132C160 112 150 92 128 86M208 46q5 4 10 0M228 45q5 4 10 0" fill="none" stroke="#5F8C50" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    </g>
+    <circle cx="100" cy="100" r="94" fill="none" stroke="#17301F" stroke-width="7"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 40 20"><path d="M2 11C12 9 24 10 36 10M27 3l9 7-9 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" data-bar>
+  <a class="brand" href="index.html" aria-label="Cats in Care, home">
+    <img class="brand-mark" src="assets/brand/cic-emblem-120.webp" alt="" width="79" height="42">
+    <span class="brand-word">Cats in Care</span>
+  </a>
+  <nav class="nav" id="site-nav" aria-label="Main" data-nav>
+    <a href="index.html">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="help.html">Help us</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="contact.html">Contact</a>
+    <span class="nav-extra">
+      <a class="btn btn-ink" href="help.html#donate">Donate <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      <a class="btn-text" href="tel:+447449370133">Call 07449 370133</a>
+    </span>
+  </nav>
+  <a class="bar-donate" href="help.html#donate">Donate</a>
+  <a class="bar-call" href="tel:+447449370133" aria-label="Call 07449 370133"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>07449 370133</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu-lines" aria-hidden="true"><i></i><i></i></span><span class="menu-word">Menu</span></button>
+</header>
+
+<main id="main">
+
+<!-- ===================================================== PAGE HEAD: downland photo, chalk annotation, White Horse print (three depths) -->
+<section class="pagehead ph-about" data-top aria-labelledby="ph-title">
+  <div class="ph-photo">
+    <div class="ph-pan" data-speed="0.2">
+      <img class="ph-img" src="assets/photo/partners-down-1600.jpg" srcset="assets/photo/partners-down-1000.jpg 1000w, assets/photo/partners-down-1600.jpg 1600w" sizes="100vw" width="1600" height="909" data-ai="assets/ai/about-bg.jpg" data-ai-alt="The rooftops of Westbury below the green chalk escarpment, with the White Horse on the slope above the town." alt="A chalk ridge and green fields in Wiltshire under a clear blue sky, seen from the air." fetchpriority="high">
+    </div>
+    <div class="ph-pan ph-pan-chalk" data-speed="0.07" aria-hidden="true">
+      <svg class="ph-chalk" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <g fill="none" stroke="#FBFAF4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-photo)">
+          <path class="ph-draw" pathLength="1" d="M700 180C640 200 620 270 690 300C790 340 960 320 1000 260C1040 200 960 160 880 160C820 160 760 166 700 180"/>
+          <path class="ph-draw" pathLength="1" d="M1000 300C1040 380 1080 430 1140 470M1100 476l44-2-6-42"/>
+        </g>
+        <text class="ph-hand" x="742" y="262" fill="#FBFAF4" filter="url(#chalk-photo)">since 1982</text>
+      </svg>
+    </div>
+  </div>
+  <figure class="ph-print" data-speed="-0.12" data-var aria-hidden="true">
+    <img src="assets/photo/card-horse-800.jpg" width="800" height="600" alt="" loading="lazy">
+    <span class="ph-print-cap">below the White Horse</span>
+  </figure>
+  <div class="ph-card">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
+    <h1 id="ph-title">About Cats in Care</h1>
+    <p class="ph-lede">A Westbury charity, on the register since 1982, for the rescue and homing of Wiltshire’s unwanted and abandoned cats.</p>
+  </div>
+</section>
+
+<!-- ===================================================== HISTORY: a chalk timeline -->
+<section class="sect" id="history" aria-labelledby="hist-title">
+  <div class="wrap two">
+    <div class="two-copy">
+      <p class="label"><span>01</span> Our story</p>
+      <h2 id="hist-title">More than forty years of rescue and homing.</h2>
+      <p class="lede">Cats in Care was registered with the Charity Commission on 10 November 1982. Today we are based on Redland Lane in Westbury, and our work is the one line on the register: rescue and homing.</p>
+      <p>We do not tell other people’s stories here, and we do not publish figures for cats helped that we cannot show you. What we can show you is on the public register, and it is all below.</p>
+    </div>
+    <ol class="timeline" data-reveal>
+      <li><span class="tl-when">10 Nov 1982</span><span class="tl-what">Registered with the Charity Commission for England and Wales as charity number 285745.</span></li>
+      <li><span class="tl-when">Today</span><span class="tl-what">Rescue and homing of unwanted and abandoned cats and kittens, across Wiltshire.</span></li>
+      <li><span class="tl-when">31 Dec 2025</span><span class="tl-what">End of the latest financial year on the register: income £50,082, spending £43,361.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================================================== AIMS -->
+<section class="sect sect-kraft" id="aims" aria-labelledby="aims-title">
+  <div class="wrap">
+    <div class="sect-head">
+      <p class="label"><span>02</span> Our aims</p>
+      <h2 id="aims-title">In the register’s own words.</h2>
+    </div>
+    <div class="aims">
+      <figure class="quote-chalk">
+        <blockquote><p>“To prevent cruelty and to relieve the suffering and distress of cats and kittens in needs of care and attention.”</p></blockquote>
+        <figcaption>Charitable objects, as recorded on the register of charities</figcaption>
+      </figure>
+      <figure class="quote-chalk quote-paper">
+        <blockquote><p>“The rescue and homing of unwanted and abandoned cats and kittens.”</p></blockquote>
+        <figcaption>What the charity does, as recorded on the register of charities</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== AREA + GOVERNANCE: the register slate -->
+<section class="sect" id="area" aria-labelledby="area-title">
+  <div class="wrap two">
+    <div class="two-copy">
+      <p class="label"><span>03</span> Area and governance</p>
+      <h2 id="area-title">Westbury, for Wiltshire.</h2>
+      <p class="lede">We are based at 24 Redland Lane in Westbury, below the White Horse on the edge of the Wiltshire downs. The register records our area of operation as Wiltshire.</p>
+      <p>Cats in Care is run by its trustees, who are responsible for the charity under charity law. The register lists seven trustees. We do not publish their names on this site; the register is the public record.</p>
+      <p><a class="btn-text" href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener">See us on the register of charities</a></p>
+    </div>
+    <figure class="slate slate-solo" data-reveal aria-labelledby="slate2-cap">
+      <div class="slate-board">
+        <p class="slate-head" id="slate2-cap">The register entry</p>
+        <dl class="slate-list">
+          <div><dt>Name</dt><dd>Cats in Care</dd></div>
+          <div><dt>Charity no.</dt><dd>285745</dd></div>
+          <div><dt>Registered</dt><dd>10 November 1982</dd></div>
+          <div><dt>Regulator</dt><dd>Charity Commission</dd></div>
+          <div><dt>Area</dt><dd>Wiltshire</dd></div>
+          <div><dt>Trustees</dt><dd>Seven</dd></div>
+          <div class="wide"><dt>Address</dt><dd>24 Redland Lane, Westbury, Wiltshire BA13 3QA</dd></div>
+        </dl>
+        <p class="slate-foot">Registered charity in England and Wales</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================================================== MONEY: chalk bars -->
+<section class="sect sect-kraft" id="money" aria-labelledby="money-title">
+  <div class="wrap two">
+    <div class="two-copy">
+      <p class="label"><span>04</span> Where the money goes</p>
+      <h2 id="money-title">The latest accounts, plainly.</h2>
+      <p class="lede">Every year we report our income and spending to the Charity Commission. These figures are for the financial year ended 31 December 2025, as shown on the public register.</p>
+      <p>As a charity, our money is for our charitable purpose: the rescue and homing of unwanted and abandoned cats and kittens. Income and spending change from year to year; the register shows the full financial history and our filed returns.</p>
+      <p><a class="btn-text" href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener">Financial history on the register</a></p>
+    </div>
+    <figure class="money" data-reveal aria-labelledby="money-cap">
+      <figcaption id="money-cap" class="money-cap">Financial year ended 31 December 2025</figcaption>
+      <div class="bar-row"><span class="bar-k">Income</span><span class="bar-track"><i class="bar-fill" style="--w:100%"></i></span><span class="bar-v">£50,082</span></div>
+      <div class="bar-row"><span class="bar-k">Spending</span><span class="bar-track"><i class="bar-fill bar-fill-2" style="--w:86.6%"></i></span><span class="bar-v">£43,361</span></div>
+      <p class="money-note">Source: Charity Commission register of charities, charity 285745.</p>
+    </figure>
+  </div>
+</section>
+
+<section class="callband" aria-labelledby="callband-title">
+  <div class="wrap callband-inner">
+    <h2 id="callband-title">Questions about the charity?</h2>
+    <a class="contact-row contact-call" href="tel:+447449370133"><span class="k">Call</span><span class="v">07449 370133</span><svg class="contact-arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" aria-labelledby="foot-title">
+  <div class="wrap foot-inner">
+    <figure class="print foot-print" aria-hidden="true">
+      <img src="assets/photo/foot-kitten-900.jpg" width="900" height="675" alt="" loading="lazy">
+      <svg class="print-chalk" viewBox="0 0 400 300" focusable="false">
+        <g fill="none" stroke="#E0761B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#chalk-soft)">
+          <path d="M300 40h26l-26 28h26M340 78h18l-18 20h18M366 108h12l-12 14h12"/>
+        </g>
+      </svg>
+    </figure>
+    <div class="foot-brand">
+      <img class="foot-mark" src="assets/brand/cic-emblem-200.webp" alt="" width="150" height="80" loading="lazy">
+      <p id="foot-title" class="foot-name">Cats in Care</p>
+      <p class="foot-line">Rescue and homing for Wiltshire’s cats.</p>
+      <p class="foot-actions"><a class="foot-btn" href="help.html#donate">Donate</a><a class="foot-btn" href="adopt.html">Adopt</a><a class="foot-btn" href="help.html#volunteer">Volunteer</a></p>
+    </div>
+    <div class="foot-legal">
+      <p><strong>Cats in Care</strong> is a registered charity in England and Wales, number 285745, regulated by the <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/285745" rel="noopener">Charity Commission</a>.</p>
+      <p><span class="foot-k">Write</span> 24 Redland Lane, Westbury, Wiltshire BA13 3QA<br><span class="foot-k">Call</span> <a href="tel:+447449370133">07449 370133</a></p>
+      <p class="foot-small">Not an emergency service. Found a cat that is hurt or in danger? See <a href="contact.html#found">what to do</a>.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="index.html">Home</a><a href="adopt.html">Adopt</a><a href="help.html">Help us</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a><a href="policies.html">Policies</a><a class="foot-top" href="#top">Back to the top <span aria-hidden="true">↑</span></a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/main.js?v=8"></script>
+</body>
+</html>
